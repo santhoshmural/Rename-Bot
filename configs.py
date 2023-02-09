@@ -17,7 +17,7 @@ class Config(object):
     BOT_TOKEN = os.environ.get("BOT_TOKEN", "6249110815:AAHE2En8g830DGqN_4ZOlxGOQAIBt_YYIpY")
     DOWNLOAD_DIR = os.environ.get("DOWNLOAD_DIR", "./downloads")
     LOGGER = logging
-    OWNER_ID = int(os.environ.get("OWNER_ID", 1365582907))
+    OWNER_ID = int(os.environ.get("OWNER_ID", "1365582907"))
     PRO_USERS = list(set(int(x) for x in os.environ.get("PRO_USERS", "1365582907").split()))
     PRO_USERS.append(OWNER_ID)
     MONGODB_URI = os.environ.get("MONGODB_URI", "mongodb+srv://Indonesia:indonesia37@cluster0.7gxmrjn.mongodb.net/?retryWrites=true&w=majority")
